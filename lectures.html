@@ -24,10 +24,10 @@ footer{padding:24px;text-align:center;background:var(--deep);color:#cbb0bd}@medi
     <div><h1>Security & Cryptography</h1><div class="sub">INTERACTIVE LECTURES</div></div>
     <nav class="nav" aria-label="Course navigation"><a href="index.html">Ebook</a><a class="active" href="lectures.html">Lectures</a><a href="lab-manual.html">Lab Manual</a><a href="studio.html">Learning Activities</a></nav>
   </div>
-  <div class="hero"><span class="tag">Based on crypto_ebook.pdf</span><h2>Lecture Library</h2><p>Book-aligned explanations, classroom visual slides, concept-specific simulations, prediction prompts, examples, activities, and formative assessment.</p><div class="stats"><div class="stat"><b>9</b><br>Book chapters</div><div class="stat"><b>1</b><br>Lecture available</div><div class="stat"><b>3 modes</b><br>Explanation · Slides · Simulation</div></div></div>
+  <div class="hero"><span class="tag">Based on crypto_ebook.pdf</span><h2>Lecture Library</h2><p>Book-aligned explanations, classroom visual slides, concept-specific simulations, prediction prompts, examples, activities, and formative assessment.</p><div class="stats"><div class="stat"><b>9</b><br>Book chapters</div><div class="stat"><b>2</b><br>Lectures available</div><div class="stat"><b>3 modes</b><br>Explanation · Slides · Simulation</div></div></div>
 </header>
 <main>
-  <div class="toolbar"><input id="search" class="search" type="search" placeholder="Search chapters or concepts…" oninput="filterLectures()"><div class="notice">Lecture 1 is ready and linked.</div></div>
+  <div class="toolbar"><input id="search" class="search" type="search" placeholder="Search chapters or concepts…" oninput="filterLectures()"><div class="notice">Lectures 1 and 2 are ready and linked.</div></div>
   <section class="cards" id="cards"><article class="lecture-card ready" data-search="introduction to information security security foundations cia triad, aaa, threats, vulnerabilities, attacks, osi security architecture, services, mechanisms, the network-security model, controls, policies, risk management, real-world incidents, activities, visual slides, simulations, and assessment.">
       <div class="number">01</div>
       <div class="body">
@@ -37,14 +37,14 @@ footer{padding:24px;text-align:center;background:var(--deep);color:#cbb0bd}@medi
         <div class="features"><span>📖 Explanation</span><span>▣ Visual slides</span><span>🧪 Simulator</span><span>✓ Assessment</span></div>
         <div class="lecture-actions"><a class="open" href="Lecture_01_Information_Security.html">Open Interactive Lecture <span>→</span></a><button class="open presentation-open" type="button" onclick="openPresentation(0)">View Presentation <span>▣</span></button></div>
       </div>
-    </article><article class="lecture-card planned" data-search="fundamentals of cryptography cryptographic foundations cryptographic terminology, cryptography and cryptanalysis, the basic cryptographic process, kerckhoffs’s principle, security goals, system types, attack models, brute force, keys, applications, limitations, and common mistakes.">
+    </article><article class="lecture-card ready" data-search="fundamentals of cryptography cryptographic foundations cryptographic terminology, cryptography and cryptanalysis, the basic cryptographic process, kerckhoffs’s principle, security goals, system types, attack models, brute force, keys, applications, limitations, and common mistakes.">
       <div class="number">02</div>
       <div class="body">
-        <div class="topline"><span class="category">Cryptographic foundations</span><div class="status planned-status">In development</div></div>
+        <div class="topline"><span class="category">Cryptographic foundations</span><div class="status ready-status">✓ Lecture available</div></div>
         <h2>Fundamentals of Cryptography</h2>
         <p>Cryptographic terminology, cryptography and cryptanalysis, the basic cryptographic process, Kerckhoffs’s principle, security goals, system types, attack models, brute force, keys, applications, limitations, and common mistakes.</p>
         <div class="features"><span>📖 Explanation</span><span>▣ Visual slides</span><span>🧪 Simulator</span><span>✓ Assessment</span></div>
-        <span class="coming">Coming next</span>
+        <div class="lecture-actions"><a class="open" href="https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank" rel="noopener noreferrer">Open Interactive Lecture <span>→</span></a><button class="open presentation-open" type="button" onclick="openPresentation(1)">View Presentation <span>▣</span></button></div>
       </div>
     </article><article class="lecture-card planned" data-search="classical cryptography and information hiding classical techniques substitution and transposition, caesar, monoalphabetic substitution, playfair, hill, vigenère, vernam, one-time pad, rail fence, columnar transposition, frequency analysis, and steganography.">
       <div class="number">03</div>
@@ -120,9 +120,20 @@ footer{padding:24px;text-align:center;background:var(--deep);color:#cbb0bd}@medi
 </div>
 <footer>Security & Cryptography Course • Gehad Taher</footer>
 <script>
-const LECTURE_1_PRESENTATION='https://docs.google.com/presentation/d/e/2PACX-1vTYlf3K_ibckD3Pd38UL2W1EUdkTUDAQnwOaDBePbcbseDyKbyp57G-SgrdVKTwWg/pubembed?start=false&loop=false&delayms=3000';
+const PRESENTATIONS=[
+  {
+    title:'Lecture 1 Presentation',
+    embed:'https://docs.google.com/presentation/d/e/2PACX-1vTYlf3K_ibckD3Pd38UL2W1EUdkTUDAQnwOaDBePbcbseDyKbyp57G-SgrdVKTwWg/pubembed?start=false&loop=false&delayms=3000',
+    full:'https://docs.google.com/presentation/d/e/2PACX-1vTYlf3K_ibckD3Pd38UL2W1EUdkTUDAQnwOaDBePbcbseDyKbyp57G-SgrdVKTwWg/pub?start=false&loop=false&delayms=3000'
+  },
+  {
+    title:'Lecture 2 Presentation',
+    embed:'https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pubembed?start=false&loop=false&delayms=3000',
+    full:'https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pub?start=false&loop=false&delayms=3000'
+  }
+];
 function filterLectures(){const q=search.value.toLowerCase().trim();document.querySelectorAll('.lecture-card').forEach(card=>card.style.display=card.dataset.search.includes(q)?'grid':'none')}
-function openPresentation(index){if(index!==0)return;const modal=document.getElementById('presentationModal'),viewer=document.getElementById('presentationViewer');document.getElementById('presentationFull').href=LECTURE_1_PRESENTATION;viewer.innerHTML=`<iframe src="${LECTURE_1_PRESENTATION}" title="Lecture 1 PowerPoint presentation" allowfullscreen loading="eager"></iframe>`;modal.classList.add('open');document.body.classList.add('presentation-opened')}
+function openPresentation(index){const presentation=PRESENTATIONS[index];if(!presentation)return;const modal=document.getElementById('presentationModal'),viewer=document.getElementById('presentationViewer');document.getElementById('presentationTitle').textContent=presentation.title;document.getElementById('presentationFull').href=presentation.full;viewer.innerHTML=`<iframe src="${presentation.embed}" title="${presentation.title}" allowfullscreen loading="eager"></iframe>`;modal.classList.add('open');document.body.classList.add('presentation-opened')}
 function closePresentation(){document.getElementById('presentationModal').classList.remove('open');document.getElementById('presentationViewer').innerHTML='';document.body.classList.remove('presentation-opened')}
 document.getElementById('presentationModal').addEventListener('click',e=>{if(e.target.id==='presentationModal')closePresentation()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closePresentation()});
 </script>
