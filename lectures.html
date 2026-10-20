@@ -24,10 +24,10 @@ footer{padding:24px;text-align:center;background:var(--deep);color:#cbb0bd}@medi
     <div><h1>Security & Cryptography</h1><div class="sub">INTERACTIVE LECTURES</div></div>
     <nav class="nav" aria-label="Course navigation"><a href="index.html">Ebook</a><a class="active" href="lectures.html">Lectures</a><a href="lab-manual.html">Lab Manual</a><a href="studio.html">Learning Activities</a></nav>
   </div>
-  <div class="hero"><span class="tag">Based on crypto_ebook.pdf</span><h2>Lecture Library</h2><p>Book-aligned explanations, classroom visual slides, concept-specific simulations, prediction prompts, examples, activities, and formative assessment.</p><div class="stats"><div class="stat"><b>9</b><br>Book chapters</div><div class="stat"><b>2</b><br>Lectures available</div><div class="stat"><b>3 modes</b><br>Explanation · Slides · Simulation</div></div></div>
+  <div class="hero"><span class="tag">Based on crypto_ebook.pdf</span><h2>Lecture Library</h2><p>Book-aligned explanations, classroom visual slides, concept-specific simulations, prediction prompts, examples, activities, and formative assessment.</p><div class="stats"><div class="stat"><b>9</b><br>Book chapters</div><div class="stat"><b>3</b><br>Lectures available</div><div class="stat"><b>3 modes</b><br>Explanation · Slides · Simulation</div></div></div>
 </header>
 <main>
-  <div class="toolbar"><input id="search" class="search" type="search" placeholder="Search chapters or concepts…" oninput="filterLectures()"><div class="notice">Lectures 1 and 2 are ready and linked.</div></div>
+  <div class="toolbar"><input id="search" class="search" type="search" placeholder="Search chapters or concepts…" oninput="filterLectures()"><div class="notice">Lectures 1, 2, and 3 are ready and linked.</div></div>
   <section class="cards" id="cards"><article class="lecture-card ready" data-search="introduction to information security security foundations cia triad, aaa, threats, vulnerabilities, attacks, osi security architecture, services, mechanisms, the network-security model, controls, policies, risk management, real-world incidents, activities, visual slides, simulations, and assessment.">
       <div class="number">01</div>
       <div class="body">
@@ -46,14 +46,14 @@ footer{padding:24px;text-align:center;background:var(--deep);color:#cbb0bd}@medi
         <div class="features"><span>📖 Explanation</span><span>▣ Visual slides</span><span>🧪 Simulator</span><span>✓ Assessment</span></div>
         <div class="lecture-actions"><a class="open" href="https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank" rel="noopener noreferrer">Open Interactive Lecture <span>→</span></a><button class="open presentation-open" type="button" onclick="openPresentation(1)">View Presentation <span>▣</span></button></div>
       </div>
-    </article><article class="lecture-card planned" data-search="classical cryptography and information hiding classical techniques substitution and transposition, caesar, monoalphabetic substitution, playfair, hill, vigenère, vernam, one-time pad, rail fence, columnar transposition, frequency analysis, and steganography.">
+    </article><article class="lecture-card ready" data-search="classical cryptography and information hiding classical techniques substitution and transposition, caesar, monoalphabetic substitution, playfair, hill, vigenère, vernam, one-time pad, rail fence, columnar transposition, frequency analysis, and steganography.">
       <div class="number">03</div>
       <div class="body">
-        <div class="topline"><span class="category">Classical techniques</span><div class="status planned-status">In development</div></div>
+        <div class="topline"><span class="category">Classical techniques</span><div class="status ready-status">✓ Lecture available</div></div>
         <h2>Classical Cryptography and Information Hiding</h2>
         <p>Substitution and transposition, Caesar, monoalphabetic substitution, Playfair, Hill, Vigenère, Vernam, one-time pad, Rail Fence, columnar transposition, frequency analysis, and steganography.</p>
         <div class="features"><span>📖 Explanation</span><span>▣ Visual slides</span><span>🧪 Simulator</span><span>✓ Assessment</span></div>
-        <span class="coming">Coming next</span>
+        <div class="lecture-actions"><a class="open" href="Lecture_03_Classical_Cryptography.html">Open Interactive Lecture <span>→</span></a><button class="open presentation-open" type="button" onclick="openPresentation(2)">View Presentation <span>▣</span></button></div>
       </div>
     </article><article class="lecture-card planned" data-search="mathematical foundations of cryptography mathematics modular arithmetic, primes, gcd, the extended euclidean algorithm, modular inverses, euler’s phi function, fermat’s and euler’s theorems, modular exponentiation, generators, discrete logarithms, crt, algebraic structures, and matrices.">
       <div class="number">04</div>
@@ -128,8 +128,13 @@ const PRESENTATIONS=[
   },
   {
     title:'Lecture 2 Presentation',
-    embed:'https://docs.google.com/presentation/d/e/2PACX-1vTBq50nCMBo8yfteL3ZIxg9KVfdCNp0dAOcKxi-dkT1lztDWLWmxByfV-tB3RwCU8J2UFsfuByPW1st/pubembed?start=false&loop=false&delayms=3000',
-    full:'https://docs.google.com/presentation/d/e/2PACX-1vTBq50nCMBo8yfteL3ZIxg9KVfdCNp0dAOcKxi-dkT1lztDWLWmxByfV-tB3RwCU8J2UFsfuByPW1st/pubembed?start=false&loop=false&delayms=3000'
+    embed:'https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pubembed?start=false&loop=false&delayms=3000',
+    full:'https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pub?start=false&loop=false&delayms=3000'
+  },
+  {
+    title:'Lecture 3 Presentation',
+    embed:'https://docs.google.com/presentation/d/e/2PACX-1vRu2XGGQwAfsE0qmMs13RA5Is9MTVqw1zo2_Yh6R93xjNPgzQyizSoaqoHsd08eYk_9Sm092oYZV7y6/pubembed?start=false&loop=false&delayms=3000',
+    full:'https://docs.google.com/presentation/d/e/2PACX-1vRu2XGGQwAfsE0qmMs13RA5Is9MTVqw1zo2_Yh6R93xjNPgzQyizSoaqoHsd08eYk_9Sm092oYZV7y6/pub?start=false&loop=false&delayms=3000'
   }
 ];
 function filterLectures(){const q=search.value.toLowerCase().trim();document.querySelectorAll('.lecture-card').forEach(card=>card.style.display=card.dataset.search.includes(q)?'grid':'none')}
