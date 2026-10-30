@@ -131,7 +131,9 @@ const PRESENTATIONS=[
     embed:'https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pubembed?start=false&loop=false&delayms=3000',
     full:'https://docs.google.com/presentation/d/e/2PACX-1vRJbXTCJ2pzlRH2WK4Wsc0wkWnvl0Ta09m_Wysu4UYIdRguZgpfkiUxDVV2SkykHyLa56Bk-_lrXg5T/pub?start=false&loop=false&delayms=3000'
   },
-  {title:'Lecture 3 Presentation',embed:'https://docs.google.com/presentation/d/e/2PACX-1vRu2XGGQwAfsE0qmMs13RA5Is9MTVqw1zo2_Yh6R93xjNPgzQyizSoaqoHsd08eYk_9Sm092oYZV7y6/pubembed?start=false&loop=false&delayms=3000',full:'https://docs.google.com/presentation/d/e/2PACX-1vRu2XGGQwAfsE0qmMs13RA5Is9MTVqw1zo2_Yh6R93xjNPgzQyizSoaqoHsd08eYk_9Sm092oYZV7y6/pub?start=false&loop=false&delayms=3000'}
+  {title:'Lecture 3 Presentation',
+   embed:'https://docs.google.com/presentation/d/e/2PACX-1vTyuubGWMyds1aEtox6j6aMN_uyaifnscM93hX4zaDpeAxf8q3vfbDI4yunVnMr5a9GLsWhjRt5vQ0P/pubembed?start=false&loop=false&delayms=3000',
+   full:'https://docs.google.com/presentation/d/e/2PACX-1vTyuubGWMyds1aEtox6j6aMN_uyaifnscM93hX4zaDpeAxf8q3vfbDI4yunVnMr5a9GLsWhjRt5vQ0P/pubembed?start=false&loop=false&delayms=3000'}
 ];
 function filterLectures(){const q=search.value.toLowerCase().trim();document.querySelectorAll('.lecture-card').forEach(card=>card.style.display=card.dataset.search.includes(q)?'grid':'none')}
 function openPresentation(index){const presentation=PRESENTATIONS[index];if(!presentation)return;const modal=document.getElementById('presentationModal'),viewer=document.getElementById('presentationViewer');document.getElementById('presentationTitle').textContent=presentation.title;document.getElementById('presentationFull').href=presentation.full;viewer.innerHTML=`<iframe src="${presentation.embed}" title="${presentation.title}" allowfullscreen loading="eager"></iframe>`;modal.classList.add('open');document.body.classList.add('presentation-opened')}
